@@ -12,12 +12,12 @@ jQuery(function() {
 			$(window).scroll(function() {
 				headerHeight = $('.header').height();
 				if($(this).scrollTop() > headerHeight){
-					$('.header').addClass('header--fixed');
 					$('body').css('padding-top', headerHeight + 'px');
+					$('.header').addClass('header--fixed');
 					
 				}else{
-					$('.header').removeClass('header--fixed');
 					$('body').css('padding-top', 0);
+					$('.header').removeClass('header--fixed');
 				}
 			});
 		// end to fixed menu
