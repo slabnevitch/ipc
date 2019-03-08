@@ -13,9 +13,11 @@ jQuery(function() {
 				headerHeight = $('.header').height();
 				if($(this).scrollTop() > headerHeight){
 					$('.header').addClass('header--fixed');
+					$('body').css('padding-top', headerHeight + 'px');
 					
 				}else{
 					$('.header').removeClass('header--fixed');
+					$('body').css('padding-top', 0);
 				}
 			});
 		// end to fixed menu
